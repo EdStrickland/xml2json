@@ -1,0 +1,70 @@
+{
+    "to": "C:\\Users\\I345440\\Desktop\\workspace\\XML2JSON\\to", 
+    "from": "C:\\Users\\I345440\\Desktop\\workspace\\XML2JSON\\from", 
+    "modules": "C:\\Users\\I345440\\Desktop\\workspace\\XML2JSON\\modules", 
+    "output": {
+        "Project": {
+            "Frontend_UT_and_OPA_coverage": {
+                "src": "Project_UT&OPA_coverage.coverage.@line-rate"
+            }, 
+            "ESlint": {
+                "src": "Project_ESlint.section.field.@value", 
+                "formatter": "eslint.formatEslint"
+            }
+        }, 
+        "Frame": {
+            "Frontend_UT_and_OPA_coverage": {
+                "src": "Frame_UT&OPA_coverage.coverage.@line-rate"
+            }, 
+            "ESlint": {
+                "src": "Frame_ESlint.section.field.@value", 
+                "formatter": "eslint.formatEslint"
+            }
+        }, 
+        "Task": {
+            "Frontend_UT_and_OPA_coverage": {
+                "src": "Task_UT&OPA_coverage.coverage.@line-rate"
+            }, 
+            "ESlint": {
+                "src": "Task_ESlint.section.field.@value", 
+                "formatter": "eslint.formatEslint"
+            }
+        }, 
+        "Summary": {
+            "Frontend_UT_and_OPA_coverage": {
+                "src": [
+                    "Task_UT&OPA_coverage.coverage.@lines-covered", 
+                    "Project_UT&OPA_coverage.coverage.@lines-covered", 
+                    "Frame_UT&OPA_coverage.coverage.@lines-covered", 
+                    "Task_UT&OPA_coverage.coverage.@lines-valid", 
+                    "Project_UT&OPA_coverage.coverage.@lines-valid", 
+                    "Frame_UT&OPA_coverage.coverage.@lines-valid"
+                ], 
+                "formatter": "UT_OPA_summary.summaryCoverage"
+            }, 
+            "ESlint": {
+                "src": [
+                    "Task_ESlint.section.field.@value", 
+                    "Project_ESlint.section.field.@value", 
+                    "Frame_ESlint.section.field.@value"
+                ], 
+                "formatter": "eslint_summary.summaryEslint"
+            }, 
+            "Backend_UT": {
+                "TestCases": {
+                    "src": "Backend_UT_Result.testsuites.@tests"
+                }, 
+                "branch_coverage": {
+                    "src": "Backend_UT_coverage.coverage.@branch-rate"
+                }, 
+                "line_coverage": {
+                    "src": "Backend_UT_coverage.coverage.@line-rate"
+                }
+            }, 
+            "ATC": {
+                "src": "ATC_Result.checkstyle.file", 
+                "formatter": "ATC.formatATC"
+            }
+        }
+    }
+}
